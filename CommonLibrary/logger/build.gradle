@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+    }
+
+    lintOptions {
+        textReport true
+        textOutput 'stdout'
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+dependencies {
+    api deps.supportAnnotations
+
+//    api deps.junit
+//    api deps.truth
+//    api deps.robolectric
+//    api deps.mockito
+//    api deps.json
+//    api deps.kotlin
+}
+
+//apply from: rootProject.file('gradle/maven_push.gradle')

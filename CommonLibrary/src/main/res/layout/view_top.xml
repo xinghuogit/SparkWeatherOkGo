@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay"
+  >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@drawable/view_top"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:titleTextColor="@android:color/white">
+
+        <!--<TextView-->
+        <!--android:id="@+id/btn_left"-->
+        <!--style="@style/btn_sytle_selectableItemBackground"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal|left"-->
+        <!--android:gravity="center"-->
+        <!--android:text=""-->
+        <!--android:textColor="@color/color_white"-->
+        <!--android:textSize="16sp"-->
+        <!--android:visibility="gone"-->
+        <!--tools:text="收件"-->
+        <!--tools:visibility="gone" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvLeftRight"-->
+        <!--style="@style/btn_sytle_selectableItemBackground"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal|left"-->
+        <!--android:layout_marginLeft="@dimen/dp_30"-->
+        <!--android:gravity="center"-->
+        <!--android:text=""-->
+        <!--android:textColor="@android/color_white"-->
+        <!--android:textSize="16sp"-->
+        <!--android:visibility="gone"-->
+        <!--tools:text="发件"-->
+        <!--tools:visibility="gone" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/bt_tv_title"-->
+        <!--style="@style/btn_sytle_selectableItemBackground"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/color_white"-->
+        <!--android:textSize="16sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/btn_right"-->
+        <!--style="@style/btn_sytle_selectableItemBackground"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal|right"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:textColor="@color/color_white"-->
+        <!--android:textSize="16sp"-->
+        <!--tools:visibility="visible" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/ivRight"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal|right"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:src="@mipmap/ic_tianjia"-->
+        <!--android:visibility="gone"-->
+        <!--tools:visibility="gone" />-->
+
+
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>

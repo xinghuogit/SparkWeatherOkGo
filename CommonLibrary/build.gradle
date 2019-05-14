@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':CommonLibrary:okgo')
+    api project(':CommonLibrary:okrx')
+    api project(':CommonLibrary:okrx2')
+    api project(':CommonLibrary:okserver')
+    api project(':CommonLibrary:logger')
+    api deps.appcompatv7
+    api deps.recyclerview7
+    api deps.design
+    api deps.constraintlayout
+    /*rx-android-java*/
+    //    api deps.rxjava2
+    api deps.rxandroid2
+    ////    api 'com.tbruyelle.rxpermissions2:rxpermissions:+'
+    //    api deps.rxlifecyclecomponents
+    /*retrofit*/
+    //    api deps.retrofit
+    //    api deps.converterscalars
+    //    api deps.convertergson
+    //    api deps.adapterrxjava2
+    //    api deps.persistentcookiejar
+
+    api deps.chucklibrary
+
+    api deps.gson
+    api deps.eventbus
+    api deps.greendao
+
+//    api deps.statusbarcompat
+
+    api deps.serialport
+}

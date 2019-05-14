@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode rootProject.versionCodeOkGo
+        versionName rootProject.versionNameOkrx2
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+//    compile 'io.reactivex.rxjava2:rxjava:2.1.1'
+////   compile "com.lzy.net:okgo:$versionName_okgo"
+//    compile project(':okgo')
+    api deps.rxjava2
+    api project(':CommonLibrary:okgo')
+}
+
+//apply from: 'bintray.gradle'
